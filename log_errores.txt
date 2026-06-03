@@ -1,0 +1,32 @@
+[2026-06-03 10:17:41] TOPICO: unmsm/callao/camara/2/telemetria
+PAYLOAD: {"sensor_id": 2, "timestamp": 1780499816.4006336, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:17:44] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780499818.6333086, "valor": 150.0, "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be less than or equal to 100 [type=less_than_equal, input_value=150.0, input_type=float]
+    For further information visit https://errors.pydantic.dev/2.13/v/less_than_equal
+------------------------------------------------------------
+[2026-06-03 10:17:45] TOPICO: unmsm/callao/camara/camara_02/telemetria
+PAYLOAD: {"sensor_id": 505, "timestamp": 1780499865.4358692, "valor": "CORRUPTO", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='CORRUPTO', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
+[2026-06-03 10:17:45] TOPICO: unmsm/callao/camara/1/telemetria
+PAYLOAD: {"sensor_id": 1, "timestamp": 1780499865.8640316, "valor": "ERROR_SENSOR", "unidad": "Celsius"}
+ERROR: PydanticValidationError:
+1 validation error for LecturaSensor
+valor
+  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='ERROR_SENSOR', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.13/v/float_parsing
+------------------------------------------------------------
